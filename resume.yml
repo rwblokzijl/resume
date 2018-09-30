@@ -1,0 +1,259 @@
+---
+# style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+# color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+style: banking
+color: black
+public: false
+lang:
+    en: true
+    nl: false
+full: true
+# photo: image.jpg
+firstname: Robert Wessel
+lastname: Blokzijl
+birthdate:
+    day: 27
+    month: Juni
+    year: 1994
+    city: Vlaardingen
+address:
+    street: Röntgenweg 583
+    postcode: 2624WW
+    city: Delft
+    country: Netherlands
+email: wesselb94@gmail.com
+phone: +31 6 20800710
+linkedin: robert-wessel-blokzijl
+github:
+twitter:
+homepage:
+
+summary:
+    en:
+    nl:
+
+experience:
+  - title:
+      en: Part-time Software Developer C++
+      nl: Bijbaan Software Developer C++
+    dates:
+      en: Jul 2017 - present
+      nl: Jul 2017 - dd
+    employer: Reac BV
+    city: Rotterdam
+    description:
+      en:
+        - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
+        - Working as a part time software developer learning the ins and outs of
+          C++ while increasing efficiency by building Linux server maintenance
+          tools.
+      nl:
+        - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
+        - Het bouwen en onderhouden van server installatie en maintainance tools
+          voor accounting en management servers.
+  - title:
+      en: Bachelor Thesis
+      nl: Afstudeerstage
+    dates:
+      en: Feb 2017 - Jun 2017
+      nl: Feb 2017 - Jun 2017
+    employer: Intermax Cloudsourcing
+    city: Rotterdam
+    description:
+      en:
+        - Software Defined Networking, Network Virtualisation, VMware NSX,
+          VMware VShphere, VMware ESXi
+        - Delivered an advisory report on the workings, costs, benefits and
+          opportunities of VMware NSX for a hosting company like Intermax.
+        - Built a VMware NSX lab for testing and education purposes.
+      nl:
+        - Software Defined Networking, Network Virtualisation, VMware NSX,
+          VMware VShphere, VMware ESXi
+        - Om de efficiency en het aanbod van Intermax te verbeteren heb ik een
+          lab omgeving gebouwd om de werking, kosten, baten en mogelijkheden van
+          VMware NSX in kaart te brengen.
+  - title:
+      en: Security Analyst
+      nl: Security Analyst
+    dates:
+      en: Sep 2015 - Feb 2017
+      nl: Sep 2015 - Feb 2017
+    employer: Fox-IT
+    city: Delft
+    description:
+      en:
+        - WireShark, Intrusion Detection Systems, Snort, malicious network
+          traffic fingerprints.
+        - Inspecting network traffic for malicious activity and escalating to
+          customers appropriately.
+      nl:
+        - WireShark, Intrusion Detection Systems, Snort, kwaadaardige netwerk
+          patronen, klant contact.
+        - Het inspecteren van netwerk verkeer op kwaadaardig gedrag en het
+          escaleren naar de klant.
+  - title:
+      en: Internship
+      nl: Stage
+    dates:
+      en: Sep 2015 - Jan 2016
+      nl: Sep 2015 - Jan 2016
+    employer: Fox-IT
+    city: Delft
+    description:
+      en:
+        - Sagan log analysis engine, Bro network security monitor
+        - To expand Fox-IT's anomaly detection capabilities I researched the
+          capabilities and differences of Sagan and Bro in a lab environment and
+          delivered a report detailing an advice.
+      nl:
+        - Sagan log analysis engine, Bro network security monitor
+        - Om de detectie mogelijkheden van Fox-IT te verbeteren heb ik een
+          onderzoek uitgevoerd naar de verschillen, en mogelijkheden van Sagan
+          en Bro.
+
+education:
+  - title:
+      en: Master Computer Science
+      nl: Master Computer Science
+    dates:
+      en: Sep 2018 - present
+      nl: Sep 2018 - dd
+    institution:
+      en: Delft University of Technology
+      nl: TU Delft
+    city: Delft
+    description:
+      en:
+        - Security and Cryptography, Networking, Advanced Algorithms
+      nl:
+        - Security and Cryptography, Networking, Advanced Algorithms
+  - title:
+      en: Bridging Program, Master Computer Science
+      nl: HBO Schakelprogramma Master Computer Science
+    dates:
+      en: Sep 2017 - Jul 2018
+      nl: Sep 2017 - Jul 2018
+    institution:
+      en: Delft University of Technology
+      nl: TU Delft
+    city: Delft
+    description:
+      en:
+        - Linear Algebra, Software Qualaty and Testing,
+          Web and Database Technology
+      nl:
+        - Linear Algebra, Software Qualaty and Testing,
+          Web and Database Technology
+  - title:
+      en: Technische Informatica
+      nl: Computer Systems Engineering
+    dates:
+      en: Sep 2013 - Jul 2017
+      nl: Sep 2013 - Jul 2017
+    institution:
+      en: The Hague University of Applied Sciences
+      nl: Haagse Hogeschool
+    city: Delft
+    description:
+      en:
+        - CCNP Routing & Switching, Programming in C and C++, PLC Programming.
+      nl:
+        - CCNP Routing & Switching, Programmeren in C en C++, PLC programmeren.
+  - title:
+      en: Pre-university education
+      nl: Generell studiekompetanse (Noors VWO)
+    dates:
+      en: Aug 2012 – Jun 2013
+      nl: Aug 2012 – Jun 2013
+    institution:
+      en: Valdres VGS, Norway
+      nl: Valdres VGS, Noorwegen
+    city: Leira
+    description:
+      en:
+      nl:
+    skip: false
+  - title:
+      en: Data- and Electronics
+      nl: Data- en Electonica
+    dates:
+      en: Aug 2011 – Jun 2012
+      nl: Aug 2011 – Jun 2012
+    institution:
+      en: Valdres VGS / Norway
+      nl: Valdres VGS / Noorwegen
+    city: Leira
+    description:
+      en:
+      nl:
+    skip: true
+  - title:
+      en: Electro - Norwegian trade school
+      nl: Elektro - Noorwegen
+    dates:
+      en: Aug 2010 – Jun 2011
+      nl: Aug 2010 – Jun 2011
+    institution:
+      en: Valdres VGS
+      nl: Valdres VGS
+    city: Leira
+    description:
+      en:
+      nl:
+    skip: true
+
+skills:
+  - title:
+      en: Languages
+      nl: Talen
+    description:
+        en: >
+            Dutch: (Mother tongue).
+            English, Norwegian: (Proficient, oral and written)
+        nl: >
+            Nederlands: (Moedertaal).
+            Engels, Noors: (Vloeiend, mondeling en schriftelijk)
+  - title:
+      en: Drivers Licence
+      nl: Rijbewijs
+    description:
+      en: B class
+      nl: Klasse B
+  - title:
+      en: Programming
+      nl: Programmeren
+    description:
+        en:
+          - >
+              Imperative: C, C++, Java.
+          - >
+              Functional: Scala.
+          - >
+              Scripting: Python, Bash.
+        nl:
+          - >
+              Imperative: C, C++, Java.
+          - >
+              Functional: Scala.
+          - >
+              Scripting: Python, Bash.
+  - title:
+      en: Workstation optimisation
+      nl: Workstation optimisation
+    description:
+      en:
+        - >
+            Using: Linux, i3, Vim, Bash, git, etc.
+      nl:
+        - >
+            Gebruikmakend van: Linux, i3, Vim, Bash, git, etc.
+
+interests:
+
+settings:
+    protect-email: true
+    protect-phone: true
+    protect-address: true
+
+...
+

@@ -1,0 +1,266 @@
+%% =========================================================================
+%% Pandoc ModernCV template, generates a pretty PDF resume from a YAML source.
+%% Any original contributions by me (Sam Juvonen 2016) are in the public domain.
+%% CREDITS
+%% - pandoc's default.latex template
+%% - moderncv template.tex
+%% - http://mrzool.cc/writing/typesetting-automation/
+%% - http://tex.stackexchange.com/questions/168537/how-to-insert-multiple-paragraphs-in-a-cventry
+%% =========================================================================
+
+\documentclass[11pt,letterpaper]{moderncv}
+% moderncv themes
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvstyle{$style$}
+\moderncvcolor{$color$}
+
+ $if(linestretch)$
+ \usepackage{setspace}
+ \setstretch{$linestretch$}
+ $endif$
+ $if(mainfont)$
+ \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
+ $else$
+  \setmainfont{Liberation Serif}[]
+ $endif$
+ $if(sansfont)$
+     \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
+ $endif$
+ $if(monofont)$
+     \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$ ,$endfor$$endif$]{$monofont$}
+ $endif$
+$if(mathfont)$
+     \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
+ $endif$
+ % use microtype if available
+ \IfFileExists{microtype.sty}{%
+ \usepackage{microtype}
+ \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+ }{}
+ $if(geometry)$
+ \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+ $endif$
+
+ $if(links-as-notes)$
+ % Make links footnotes instead of hotlinks:
+ \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+ $endif$
+
+ $for(header-includes)$
+ $header-includes$
+ $endfor$
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}
+% for the 'classic' style, if you want to force the width allocated to your
+% name and avoid line breaks. be careful though, the length is normally
+% calculated to avoid any overlap with your personal info;
+% use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+
+%% Redefine cventry and cvitem to allow multiple paragraphs.
+\usepackage{enumitem}
+
+\renewcommand{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    .\strut%
+    \newline{\small\strut #7 \par}}}
+
+\renewcommand{\cvitem}[3][.25em]{%
+  \begin{mycvlist}
+    \item[#2] #3
+    \end{mycvlist}
+    \addvspace{#1}}
+
+\newlist{mycvlist}{description}{1}
+\setlist[mycvlist]{labelwidth=\hintscolumnwidth,labelsep=\separatorcolumnwidth,leftmargin=!,align=right,font=\normalfont}
+
+%% ========================================================================
+%% personal data
+%% ========================================================================
+\name{$firstname$}{$lastname$}
+$if(photo)$
+% '64pt' is the height the picture must be resized to, 0.4pt is the thickness
+% of the frame around it (put it to 0pt for no frame) and 'picture' is the name
+% of the picture file
+	\photo[80pt][0.4pt]{$photo$}
+$endif$
+
+
+$if(title)$
+\title{$title$}
+$endif$
+
+% optional, remove / comment the line if not wanted;
+% the "postcode city" and "country" arguments can be omitted or provided empty
+$if(address)$
+	$if(public)$
+		\address{$address.city$}{$address.country$}
+	$else$
+		$if(address.street)$
+			\address{$address.street$}{$address.postcode$ $address.city$}{$address.country$}
+		$else$
+			\address{$address.city$}{$address.country$}
+		$endif$
+	$endif$
+$endif$
+
+% these are optional and can be commented out
+$if(public)$
+	$if(settings.protect-phone)$
+	$else$
+		\phone[mobile]{$phone$}
+	$endif$
+	$if(settings.protect-email)$
+	$else$
+		\email{$email$}
+	$endif$
+$else$
+	\phone[mobile]{$phone$}
+	\email{$email$}
+$endif$
+$if(homepage)$
+	\homepage{$homepage$}
+$endif$
+$if(linkedin)$
+	\social[linkedin]{$linkedin$}
+$endif$
+$if(twitter)$
+	\social[twitter]{$twitter$}
+$endif$
+$if(github)$
+	\social[github]{$github$}
+$endif$
+%\extrainfo{additional information}
+
+
+%%----------------------------------------------------------------------------------
+%% Actual document content
+%%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(lang.en)$
+	$if(summary.en)$
+		\section{Summary}
+		$summary.en$
+	$endif$
+$else$$if(lang.nl)$
+	$if(summary.nl)$
+		\section{Samenvatting}
+		$summary.nl$
+	$endif$
+$endif$$endif$
+
+$if(lang.en)$
+	\section{Job Experience}
+	$for(experience)$
+		\cventry{$experience.dates.en$}{$experience.title.en$}{$experience.employer$}
+			{$experience.city$}{}
+			{$for(experience.description.en)$$experience.description.en$$sep$ \medskip{}\newline{}
+			$endfor$}
+	$endfor$
+$else$$if(lang.nl)$
+	\section{Werkervaring}
+	$for(experience)$
+		\cventry{$experience.dates.nl$}{$experience.title.nl$}{$experience.employer$}
+			{$experience.city$}{}
+			{$for(experience.description.nl)$$experience.description.nl$$sep$ \medskip{}\newline{}
+			$endfor$}
+	$endfor$
+$else$
+	\section{Experience}
+	SELECT A LANGUAGE
+$endif$$endif$
+
+$if(lang.en)$
+	\section{Education}
+	$for(education)$
+		$if(education.skip)$
+		$else$
+		 \cventry{$education.dates.en$}{$education.title.en$}{$education.institution.en$}
+		 	 {$education.city$}{}
+		 	 {$for(education.description.en)$$education.description.en$$sep$ \medskip{}\newline{}
+		 	 $endfor$}
+		$endif$
+	$endfor$
+$else$$if(lang.nl)$
+	\section{Opleiding}
+	$for(education)$
+		$if(education.skip)$
+		$else$
+		 \cventry{$education.dates.nl$}{$education.title.nl$}{$education.institution.nl$}
+		 	 {$education.city$}{}
+		 	 {$for(education.description.nl)$$education.description.nl$$sep$ \medskip{}\newline{}
+		 	 $endfor$}
+		$endif$
+	$endfor$
+$else$
+	\section{Education}
+	SELECT A LANGUAGE
+$endif$$endif$
+
+$if(skills)$
+$if(lang.en)$
+	$if(interests)$
+		\section{Other Skills}
+	$else$
+		\section{Other Skills, Interests and Activities}
+	$endif$
+	$for(skills)$
+		\cvitem{$skills.title.en$}
+		{$for(skills.description.en)$$skills.description.en$$sep$ \medskip{}\newline{}
+			$endfor$}
+	$endfor$
+$else$$if(lang.nl)$
+	$if(interests)$
+		\section{Andere Vaardigheden}
+	$else$
+		\section{Andere Vaardigheden, Interesses en Activiteiten}
+	$endif$
+	$for(skills)$
+		\cvitem{$skills.title.nl$}
+		{$for(skills.description.nl)$$skills.description.nl$$sep$ \medskip{}\newline{}
+		 	 $endfor$}
+	$endfor$
+$else$
+	\section{Other Skills}
+	SELECT A LANGUAGE
+$endif$$endif$
+$endif$
+
+$if(interests)$
+$if(lang.en)$
+	\section{Other Interests and Activities}
+	$for(interests)$
+		\cvitem{$interests.title.en$}
+		{$for(interests.description.en)$$interests.description.en$$sep$ \medskip{}\newline{}
+		 	 $endfor$}
+	$endfor$
+$else$$if(lang.nl)$
+	\section{Andere Interesses en Activiteiten}
+	$for(interests)$
+		\cvitem{$interests.title.nl$}
+		{$for(interests.description.nl)$$interests.description.nl$$sep$ \medskip{}\newline{}
+		 	 $endfor$}
+	$endfor$
+$else$
+	\section{Interests}
+	SELECT A LANGUAGE
+$endif$$endif$
+$endif$
+
+\end{document}
+
