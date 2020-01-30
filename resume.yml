@@ -3,7 +3,7 @@
 # color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 style: banking
 color: black
-public: false
+public: true
 lang:
     en: true
     nl: false
@@ -12,19 +12,21 @@ full: true
 firstname: Robert Wessel
 lastname: Blokzijl
 birthdate:
+    include: true
     day: 27
-    month: Juni
+    month: June
     year: 1994
     city: Vlaardingen
 address:
+    include: true
     street: Röntgenweg 583
     postcode: 2624WW
     city: Delft
     country: Netherlands
 email: wesselb94@gmail.com
-phone: +31 6 20800710
+# phone: +31 6 20800710
 linkedin: robert-wessel-blokzijl
-github:
+github: Bloodyfool
 twitter:
 homepage:
 
@@ -34,8 +36,8 @@ summary:
 
 experience:
   - title:
-      en: Part-time Software Developer C++
-      nl: Bijbaan Software Developer C++
+      en: Software Developer C++
+      nl: Software Developer C++
     dates:
       en: Jul 2017 - present
       nl: Jul 2017 - dd
@@ -44,16 +46,15 @@ experience:
     description:
       en:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
-        - Working as a part time software developer learning the ins and outs of
-          C++ while increasing efficiency by building Linux server maintenance
-          tools.
+        - Working as a part time software developer increasing efficiency by
+          building Linux server maintenance tools.
       nl:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
         - Het bouwen en onderhouden van server installatie en maintainance tools
           voor accounting en management servers.
   - title:
-      en: Bachelor Thesis
-      nl: Afstudeerstage
+      en: Cloud Hosting - Bachelor Thesis
+      nl: Cloud Hosting - Afstudeerstage
     dates:
       en: Feb 2017 - Jun 2017
       nl: Feb 2017 - Jun 2017
@@ -63,9 +64,10 @@ experience:
       en:
         - Software Defined Networking, Network Virtualisation, VMware NSX,
           VMware VShphere, VMware ESXi
+        - Designed and built a VMware NSX lab environment for research and
+          education purposes.
         - Delivered an advisory report on the workings, costs, benefits and
           opportunities of VMware NSX for a hosting company like Intermax.
-        - Built a VMware NSX lab for testing and education purposes.
       nl:
         - Software Defined Networking, Network Virtualisation, VMware NSX,
           VMware VShphere, VMware ESXi
@@ -73,8 +75,8 @@ experience:
           lab omgeving gebouwd om de werking, kosten, baten en mogelijkheden van
           VMware NSX in kaart te brengen.
   - title:
-      en: Security Analyst
-      nl: Security Analyst
+      en: Cybersecurity Analyst
+      nl: Cybersecurity Analyst
     dates:
       en: Sep 2015 - Feb 2017
       nl: Sep 2015 - Feb 2017
@@ -82,18 +84,19 @@ experience:
     city: Delft
     description:
       en:
-        - WireShark, Intrusion Detection Systems, Snort, malicious network
-          traffic fingerprints.
-        - Inspecting network traffic for malicious activity and escalating to
-          customers appropriately.
+        - WireShark, Intrusion Detection Systems, Snort, Ransomware, Exploit
+          kits, Advandced Persistent
+          Threats
+        - Time sensitive analysis of potentially malicious traffic in mission
+          critical customer networks.
       nl:
         - WireShark, Intrusion Detection Systems, Snort, kwaadaardige netwerk
           patronen, klant contact.
-        - Het inspecteren van netwerk verkeer op kwaadaardig gedrag en het
+        - Het monitoren van netwerk verkeer op kwaadaardig gedrag en het
           escaleren naar de klant.
   - title:
-      en: Internship
-      nl: Stage
+      en: Cyberthreat monitoring Internship
+      nl: Cyberthreat monitoring Stage
     dates:
       en: Sep 2015 - Jan 2016
       nl: Sep 2015 - Jan 2016
@@ -103,8 +106,7 @@ experience:
       en:
         - Sagan log analysis engine, Bro network security monitor
         - To expand Fox-IT's anomaly detection capabilities I researched the
-          capabilities and differences of Sagan and Bro in a lab environment and
-          delivered a report detailing an advice.
+          capabilities and differences of Sagan and Bro in a lab environment.
       nl:
         - Sagan log analysis engine, Bro network security monitor
         - Om de detectie mogelijkheden van Fox-IT te verbeteren heb ik een
@@ -125,8 +127,9 @@ education:
     description:
       en:
         - Security and Cryptography, Networking, Advanced Algorithms
-        - I am currently pursuing a Master Computer Science with a focus on
-          distributed systems
+        - I am currently working on a thesis project with a focus on distributed
+          systems and blockchain technology to implement a digital, price stable
+          EuroCoin.
       nl:
         - Security and Cryptography, Networking, Advanced Algorithms
   - title:
@@ -141,10 +144,10 @@ education:
     city: Delft
     description:
       en:
-        - Linear Algebra, Software Qualaty and Testing,
+        - Linear Algebra, Software Quality and Testing,
           Web and Database Technology
       nl:
-        - Linear Algebra, Software Qualaty and Testing,
+        - Linear Algebra, Software Quality and Testing,
           Web and Database Technology
   - title:
       en: Technische Informatica
@@ -168,12 +171,38 @@ education:
       en: Aug 2012 – Jun 2013
       nl: Aug 2012 – Jun 2013
     institution:
-      en: Valdres VGS, Norway
-      nl: Valdres VGS, Noorwegen
-    city: Leira
+      en: Valdres VGS
+      nl: Valdres VGS
+    city: Leira, Norway
     description:
       en:
       nl:
+    skip: false
+  - title:
+    dates:
+      en: Aug 2011 – Jun 2012
+      nl: Aug 2011 – Jun 2012
+    institution:
+      en: Valdres VGS
+      nl: Valdres VGS
+    city: Leira, Norway
+    description:
+      en:
+      nl:
+    skip: true
+  - title:
+      en: Electro - Norwegian trade school
+      nl: Elektro - Noorwegen
+    description:
+      en: Specialisation in Data- and Electronics
+      nl: Specialisatie Data- en Electonica
+    dates:
+      en: Aug 2010 – Jun 2012
+      nl: Aug 2010 – Jun 2012
+    institution:
+      en: Valdres VGS
+      nl: Valdres VGS
+    city: Leira, Norway
     skip: false
   - title:
       en: Data- and Electronics
@@ -182,9 +211,9 @@ education:
       en: Aug 2011 – Jun 2012
       nl: Aug 2011 – Jun 2012
     institution:
-      en: Valdres VGS / Norway
-      nl: Valdres VGS / Noorwegen
-    city: Leira
+      en: Valdres VGS
+      nl: Valdres VGS
+    city: Leira, Norway
     description:
       en:
       nl:
@@ -209,11 +238,15 @@ skills:
       en: Languages
       nl: Talen
     description:
-        en: >
+        en:
+        - >
             Dutch: (Mother tongue).
+        - >
             English, Norwegian: (Proficient, oral and written)
-        nl: >
+        nl:
+        - >
             Nederlands: (Moedertaal).
+        - >
             Engels, Noors: (Vloeiend, mondeling en schriftelijk)
   - title:
       en: Drivers Licence
@@ -227,18 +260,71 @@ skills:
     description:
         en:
           - >
-              Imperative: C, C++, Java.
+              Imperative: C, C++, Java...
           - >
               Functional: Scala.
           - >
-              Scripting: Python, Bash.
+              Scripting: Python, Bash...
         nl:
           - >
-              Imperative: C, C++, Java.
+              Imperative: C, C++, Java...
           - >
               Functional: Scala.
           - >
-              Scripting: Python, Bash.
+              Scripting: Python, Bash...
+  - title:
+      en: Technical Proficiencies
+      nl: Technische Vaardigheden
+    description:
+        en:
+          - >
+              Linux (Arch, Debian, Ubuntu) - 5 years of daily personal and
+              proffessional use
+          - >
+              Git
+          - >
+              VMWare vSphere, ESXi, NSX
+          - >
+              Networking technologies - routing, switching, troubleshooting
+        nl:
+          - >
+              Linux (Arch, Debian, Ubuntu) - 5 jaar dagelijks persoonlijk and
+              proffesioneel gebruik
+          - >
+              Git
+          - >
+              VMWare vSphere, ESXi, NSX
+          - >
+              Netwerk technologie - routing, switching, troubleshooting
+
+interests:
+  - title:
+      en: Brazillian Jiu Jitsu
+      nl: Brazillian Jiu Jitsu
+    description:
+      en:
+        - >
+            White belt
+        - >
+            Frequent participant in competition
+      nl:
+        - >
+            White belt Competitor
+        - >
+            Frequent deelnemer in competities
+  - title:
+      en: Home automation
+      nl: Thuis automatisering
+    description:
+      en:
+        - >
+            Using: Linux, Raspberry pi, Networking equipment, Wifi and Zigbee
+            Based sensors and actuators, Homemade electronics
+      nl:
+        - >
+            Gebruikmakend van: Linux, Raspberry pi, Netwerk apparatuur
+            Wifi en Zigbee sensoren en actuatoren, Thuisgemaakte electronica
+
   - title:
       en: Workstation optimisation
       nl: Workstation optimisation
@@ -250,12 +336,10 @@ skills:
         - >
             Gebruikmakend van: Linux, i3, Vim, Bash, git, etc.
 
-interests:
-
 settings:
-    protect-email: true
+    protect-email: false
     protect-phone: true
-    protect-address: true
+    protect-address: false
 
 ...
 
