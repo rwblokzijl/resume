@@ -1,7 +1,7 @@
 all: pdf
 
 pdf: resume.pdf
-resume.pdf: resume.yml resume.pandoc.tex ; pandoc --template resume.pandoc.tex --latex-engine=xelatex -o resume.pdf resume.yml
+resume.pdf: resume.yml resume.pandoc.tex ; pandoc --template resume.pandoc.tex --pdf-engine=xelatex -o resume.pdf resume.yml
 
 html: resume.html
 resume.html: resume.yml resume.pandoc.html ; pandoc --template resume.pandoc.html --self-contained --css resume.css -o resume.html resume.yml
