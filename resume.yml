@@ -8,7 +8,7 @@ lang:
     en: true
     nl: false
 full: true
-# photo: image.jpg
+photo: image.png
 firstname: Robert Wessel
 lastname: Blokzijl
 birthdate:
