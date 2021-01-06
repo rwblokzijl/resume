@@ -260,42 +260,44 @@ skills:
     description:
         en:
           - >
-              Imperative: C, C++, Java...
+              General development: C/C++, Java, Python
           - >
-              Functional: Scala.
+              App development: Android/Java, Kotlin
           - >
-              Scripting: Python, Bash...
+              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL, REST, SPA, PWA
         nl:
           - >
-              Imperative: C, C++, Java...
+              Algemeen: C/C++, Java, Python
           - >
-              Functional: Scala.
+              App development: Android/Java, Kotlin
           - >
-              Scripting: Python, Bash...
+              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL, REST, SPA, PWA
   - title:
       en: Technical Proficiencies
       nl: Technische Vaardigheden
     description:
         en:
           - >
-              Linux (Arch, Debian, Ubuntu) - 5 years of daily personal and
-              proffessional use
+              Systems: GNU/Linux (Arch, Debian, Ubuntu) - daily personal and proffessional use since 2014
           - >
-              Git
+              Virtualisation: VMware ESXi, vSphere, NSX, vSAN, Virtual Box, KVM
           - >
-              VMWare vSphere, ESXi, NSX
+              Networking: Architecture design, TCP/IP, OSI, Routing, Switching, Troubleshooting, Cisco, Juniper
           - >
-              Networking technologies - routing, switching, troubleshooting
+              Security: Snort, BRO network monitor, Firewalling, VPN, PGP,
+          - >
+              Other proficiencies: Git, svn, GNU/Linux CLI tooling
         nl:
           - >
-              Linux (Arch, Debian, Ubuntu) - 5 jaar dagelijks persoonlijk and
-              proffesioneel gebruik
+              Systemen: GNU/Linux (Arch, Debian, Ubuntu) - dagelijks persoonlijk and proffesioneel gebruik sinds 2014
           - >
-              Git
+              Virtualisatie: VMware ESXi, vSphere, NSX, vSAN, Virtual Box, KVM
           - >
-              VMWare vSphere, ESXi, NSX
+              Netwerken: Architectuur ontwerp, TCP/IP, OSI, Routing, Switching, Troubleshooting, Cisco, Juniper
           - >
-              Netwerk technologie - routing, switching, troubleshooting
+              Security: Snort, BRO network monitor, Firewalling, VPN, PGP,
+          - >
+              Andere vaardigheden: Git, svn, GNU/Linux CLI tooling
 
 interests:
   - title:
