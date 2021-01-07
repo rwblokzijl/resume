@@ -26,7 +26,7 @@ address:
 email: wesselb94@gmail.com
 # phone: +31 6 20800710
 linkedin: robert-wessel-blokzijl
-github: Bloodyfool
+github: rwblokzijl
 twitter:
 homepage:
 
@@ -52,6 +52,23 @@ experience:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
         - Het bouwen en onderhouden van server installatie en maintainance tools
           voor accounting en management servers.
+  - title:
+      en: Web Developer
+      nl: Web Developer
+    dates:
+      en: Jun 2015 - present
+      nl: Jun 2015 - dd
+    employer: Freelance
+    description:
+      en:
+        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
+        - Working as a freelance software developer creating and maintaning
+          an on-the-road accounting app, and hosting and maintaning websites for
+          various clients.
+      nl:
+        - Python, Django, HTML, CSS, JavaScript, VueJS
+        - het maken en onderhouden van een on-the-road boekhoudapp, en het
+          hosten en onderhouden van websites voor verschillende opdrachtgevers.
   - title:
       en: Cloud Hosting - Bachelor Thesis
       nl: Cloud Hosting - Afstudeerstage
@@ -118,8 +135,8 @@ education:
       en: Master Computer Science
       nl: Master Computer Science
     dates:
-      en: Sep 2018 - present
-      nl: Sep 2018 - dd
+      en: Sep 2018 - Feb 2021
+      nl: Sep 2018 - Feb 2021
     institution:
       en: Delft University of Technology
       nl: TU Delft
@@ -127,11 +144,16 @@ education:
     description:
       en:
         - Security and Cryptography, Networking, Advanced Algorithms
-        - I am currently working on a thesis project with a focus on distributed
-          systems and blockchain technology to implement a digital, price stable
-          EuroCoin.
+        - My thesis project involved developing a Digital Euro based on the
+          TrustChain blockchain. It involved development in Python, and
+          Kotlin/Android, integration with the Tikkie API, and a field trail
+          with the Netherlands Authority for the Financial Markets (AFM).
       nl:
         - Security and Cryptography, Networking, Advanced Algorithms
+        - Mijn afstudeerproject betrof het ontwikkelen van een digitale euro op
+          basis van de TrustChain-blockchain. Het omvatte ontwikkeling in
+          Python, en Kotlin/Android, integratie met de Tikkie API en een
+          field-trail met de Autoriteit Financiële Markten (AFM).
   - title:
       en: Bridging Program, Master Computer Science
       nl: HBO Schakelprogramma Master Computer Science
