@@ -5,8 +5,8 @@ style: banking
 color: black
 public: true
 lang:
-    en: true
-    nl: false
+    en: false
+    nl: true
 full: true
 photo: image.png
 firstname: Robert Wessel
@@ -66,8 +66,8 @@ experience:
           an on-the-road accounting app, and hosting and maintaning websites for
           various clients.
       nl:
-        - Python, Django, HTML, CSS, JavaScript, VueJS
-        - het maken en onderhouden van een on-the-road boekhoudapp, en het
+        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
+        - Het maken en onderhouden van een on-the-road boekhoudapp, en het
           hosten en onderhouden van websites voor verschillende opdrachtgevers.
   - title:
       en: Cloud Hosting - Bachelor Thesis
@@ -109,7 +109,7 @@ experience:
       nl:
         - WireShark, Intrusion Detection Systems, Snort, kwaadaardige netwerk
           patronen, klant contact.
-        - Het monitoren van netwerk verkeer op kwaadaardig gedrag en het
+        - Het monitoren van netwerk verkeer voor kwaadaardig gedrag en het
           escaleren naar de klant.
   - title:
       en: Cyberthreat monitoring Internship
