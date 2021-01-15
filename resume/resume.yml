@@ -5,8 +5,8 @@ style: banking
 color: black
 public: true
 lang:
-    en: false
-    nl: true
+    en: true
+    nl: false
 full: true
 photo: image.png
 firstname: Robert Wessel
