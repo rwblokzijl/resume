@@ -14,7 +14,9 @@ lastname: Blokzijl
 birthdate:
     include: true
     day: 27
-    month: June
+    month:
+      en: June
+      nl: Juni
     year: 1994
     city: Vlaardingen
 address:
@@ -24,7 +26,7 @@ address:
     city: Delft
     country: Netherlands
 email: wesselb94@gmail.com
-# phone: +31 6 20800710
+phone: +31 6 20800710
 linkedin: robert-wessel-blokzijl
 github: rwblokzijl
 twitter:
@@ -47,7 +49,7 @@ experience:
       en:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
         - Working as a part time software developer increasing efficiency by
-          building Linux server maintenance tools.
+          building Linux server installation and maintenance tools.
       nl:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
         - Het bouwen en onderhouden van server installatie en maintainance tools
