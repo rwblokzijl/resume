@@ -5,8 +5,8 @@ style: banking
 color: black
 public: true
 lang:
-    en: true
-    nl: false
+    en: false
+    nl: true
 full: true
 photo: image.png
 firstname: Robert Wessel
@@ -54,6 +54,27 @@ experience:
         - C++, ncurses, PostgreSQL, Jenkins, SVN, Debian Linux.
         - Het bouwen en onderhouden van server installatie en maintainance tools
           voor accounting en management servers.
+  - title:
+      en: Thesis Blockchain engineering
+      nl: Thesis Blockchain engineering
+    dates:
+      en: Nov 2019 - Feb 2021
+      nl: Nov 2019 - Feb 2021
+    employer: TUDelft
+    city: Delft
+    description:
+      en:
+        - Blockchain, TrustChain, Stablecoin, Digital Euro, Python, VueJS,
+          Android, Kotlin
+        - Researching stablecoins and creating a Proof of Concept for a digital
+          Euro, in cooperation with the AFM to explore the possibilities of
+          blockchain in the Eurosystem.
+      nl:
+        - Blockchain, TrustChain, Stablecoin, Digital Euro, Python, VueJS,
+          Android, Kotlin
+        - Het onderzoeken van stablecoins en het bouwen van een Proof of Concept
+          van een Digitale Euro, in samenwerking met de AFM om de mogelijkheden
+          van blockchain te verkennen binnen het Eurosysteem.
   - title:
       en: Web Developer
       nl: Web Developer
