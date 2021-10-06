@@ -38,11 +38,28 @@ summary:
 
 experience:
   - title:
+      en: DevOps Cloud Engineer
+      nl: DevOps Cloud Engineer
+    dates:
+      en: May 2021 - present
+      nl: Mei 2021 - dd
+    employer: Hunt & Hackett BV
+    city: Scheveningen
+    description:
+      en:
+        - Terraform, Ansible, GCP, Azure
+        - Design, develop and maintain GCP infrastructure using Infrastructure
+          as Code practices.
+      nl:
+        - Terraform, Ansible, GCP, Azure
+        - Het ontwerpen, ontwikkelen en onderhouden van GCP infrastructuur met
+          het Infrastructure as Code process.
+  - title:
       en: Software Developer C++
       nl: Software Developer C++
     dates:
-      en: Jul 2017 - present
-      nl: Jul 2017 - dd
+      en: Jul 2017 - Jan 2021
+      nl: Jul 2017 - Jan 2021
     employer: Reac BV
     city: Rotterdam
     description:
@@ -58,8 +75,8 @@ experience:
       en: Thesis Blockchain engineering
       nl: Thesis Blockchain engineering
     dates:
-      en: Nov 2019 - Feb 2021
-      nl: Nov 2019 - Feb 2021
+      en: Nov 2019 - Jul 2021
+      nl: Nov 2019 - Jul 2021
     employer: TUDelft
     city: Delft
     description:
@@ -79,8 +96,8 @@ experience:
       en: Web Developer
       nl: Web Developer
     dates:
-      en: Jun 2015 - present
-      nl: Jun 2015 - dd
+      en: Jun 2019 - present
+      nl: Jun 2019 - dd
     employer: Freelance
     description:
       en:
