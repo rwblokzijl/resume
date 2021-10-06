@@ -5,8 +5,8 @@ style: banking
 color: black
 public: true
 lang:
-    en: false
-    nl: true
+    en: true
+    nl: false
 full: true
 photo: image.png
 firstname: Robert Wessel
@@ -340,6 +340,8 @@ skills:
     description:
         en:
           - >
+              Cloud: GCP, Azure, Terraform
+          - >
               Systems: GNU/Linux (Arch, Debian, Ubuntu) - daily personal and proffessional use since 2014
           - >
               Virtualisation: VMware ESXi, vSphere, NSX, vSAN, Virtual Box, KVM
@@ -350,6 +352,8 @@ skills:
           - >
               Other proficiencies: Git, svn, GNU/Linux CLI tooling
         nl:
+          - >
+              Cloud: GCP, Azure, Terraform
           - >
               Systemen: GNU/Linux (Arch, Debian, Ubuntu) - dagelijks persoonlijk and proffesioneel gebruik sinds 2014
           - >
@@ -368,12 +372,8 @@ interests:
     description:
       en:
         - >
-            White belt
-        - >
-            Frequent participant in competition
+            Frequent participant in competitions
       nl:
-        - >
-            White belt Competitor
         - >
             Frequent deelnemer in competities
   - title:
@@ -395,10 +395,10 @@ interests:
     description:
       en:
         - >
-            Using: Linux, i3, Vim, Bash, git, etc.
+            Using: Linux, i3, Vim, Zsh, git, etc.
       nl:
         - >
-            Gebruikmakend van: Linux, i3, Vim, Bash, git, etc.
+            Gebruikmakend van: Linux, i3, Vim, Zsh, git, etc.
 
 settings:
     protect-email: false
