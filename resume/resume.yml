@@ -5,8 +5,8 @@ style: banking
 color: black
 public: true
 lang:
-    en: true
-    nl: false
+    en: false
+    nl: true
 full: true
 photo: image.png
 firstname: Robert Wessel
@@ -84,14 +84,13 @@ experience:
         - Blockchain, TrustChain, Stablecoin, Digital Euro, Python, VueJS,
           Android, Kotlin
         - Researching stablecoins and creating a Proof of Concept for a digital
-          Euro, in cooperation with the AFM to explore the possibilities of
-          blockchain in the Eurosystem.
+          Euro, to explore the possibilities of blockchain in the Eurosystem.
       nl:
         - Blockchain, TrustChain, Stablecoin, Digital Euro, Python, VueJS,
           Android, Kotlin
         - Het onderzoeken van stablecoins en het bouwen van een Proof of Concept
-          van een Digitale Euro, in samenwerking met de AFM om de mogelijkheden
-          van blockchain te verkennen binnen het Eurosysteem.
+          van een Digitale Euro, om de mogelijkheden van blockchain te
+          verkennen binnen het Eurosysteem.
   - title:
       en: Web Developer
       nl: Web Developer
@@ -378,7 +377,7 @@ interests:
             Frequent deelnemer in competities
   - title:
       en: Home automation
-      nl: Thuis automatisering
+      nl: Huis automatisering
     description:
       en:
         - >
@@ -387,7 +386,7 @@ interests:
       nl:
         - >
             Gebruikmakend van: Linux, Raspberry pi, Netwerk apparatuur
-            Wifi en Zigbee sensoren en actuatoren, Thuisgemaakte electronica
+            Wifi en Zigbee sensoren en actuatoren, huisgemaakte electronica
 
   - title:
       en: Workstation optimisation
