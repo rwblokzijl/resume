@@ -4,9 +4,9 @@
 style: banking
 color: black
 public: true
-lang:
-    en: false
-    nl: true
+# lang:
+#     en: false
+#     nl: true
 full: true
 photo: image.png
 firstname: Robert Wessel
@@ -44,16 +44,16 @@ experience:
       en: May 2021 - present
       nl: Mei 2021 - dd
     employer: Hunt & Hackett BV
-    city: Scheveningen
+    city: Den Haag
     description:
       en:
-        - Terraform, Ansible, GCP, Azure
-        - Design, develop and maintain GCP infrastructure using Infrastructure
+        - Terraform, Hashicorp Vault, Ansible, GCP, Secure Design
+        - Design, develop and maintain GCP infrastructure using Secure Infrastructure
           as Code practices.
       nl:
-        - Terraform, Ansible, GCP, Azure
-        - Het ontwerpen, ontwikkelen en onderhouden van GCP infrastructuur met
-          het Infrastructure as Code process.
+        - Terraform, Hashicorp Vault, Ansible, GCP, Secure Design
+        - Het veilig ontwerpen, ontwikkelen en onderhouden van GCP infrastructuur met
+          Infrastructure as Code tooling.
   - title:
       en: Software Developer C++
       nl: Software Developer C++

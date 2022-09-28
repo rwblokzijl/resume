@@ -106,7 +106,7 @@ $endif$
 $if(address)$
 	$if(address.include)$
 		$if(public)$
-			$if(lang.nl)$
+			$if(lang_nl)$
 				\address{Geboren $birthdate.day$ $birthdate.month.nl$ $birthdate.year$ te $birthdate.city$ }{\makenewline Woonachtig in $address.city$}
 			$else$
 				\address{Born $birthdate.city$, $birthdate.month.en$, $birthdate.day$ $birthdate.year$}{\makenewline Lives in $address.city$}
@@ -116,7 +116,7 @@ $if(address)$
 				% DIRTY, see: https://tex.stackexchange.com/questions/267604/moderncv-adding-date-of-birth-to-personal-information
 				% \address{\mbox{\hspace*{-2cm}Born $birthdate.day$.$birthdate.month$.$birthdate.year$,$birthdate.city$} \newline $address.city$}{$address.postcode$}{$address.country$}
 				% \address{$address.street$}{$address.postcode$ $address.city$}{$address.country$}
-			$if(lang.nl)$
+			$if(lang_nl)$
 				\address{Geboren $birthdate.day$ $birthdate.month.nl$ $birthdate.year$ te $birthdate.city$ }{\makenewline Woonachtig in $address.city$}
 			$else$
 				\address{Born $birthdate.city$, $birthdate.month.en$, $birthdate.day$ $birthdate.year$}{\makenewline Lives in $address.city$}
@@ -165,19 +165,19 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-$if(lang.en)$
+$if(lang_en)$
 	$if(summary.en)$
 		\section{Summary}
 		$summary.en$
 	$endif$
-$else$$if(lang.nl)$
+$else$$if(lang_nl)$
 	$if(summary.nl)$
 		\section{Samenvatting}
 		$summary.nl$
 	$endif$
 $endif$$endif$
 
-$if(lang.en)$
+$if(lang_en)$
 	\section{Work Experience}
 	$for(experience)$
 		\cventry{$experience.dates.en$}{$experience.title.en$}{$experience.employer$}
@@ -185,7 +185,7 @@ $if(lang.en)$
 			{$for(experience.description.en)$$experience.description.en$$sep$ \medskip{}\newline{}
 			$endfor$}
 	$endfor$
-$else$$if(lang.nl)$
+$else$$if(lang_nl)$
 	\section{Werkervaring}
 	$for(experience)$
 		\cventry{$experience.dates.nl$}{$experience.title.nl$}{$experience.employer$}
@@ -198,7 +198,7 @@ $else$
 	SELECT A LANGUAGE
 $endif$$endif$
 
-$if(lang.en)$
+$if(lang_en)$
 	\section{Education}
 	$for(education)$
 		$if(education.skip)$
@@ -209,7 +209,7 @@ $if(lang.en)$
 		 	 $endfor$}
 		$endif$
 	$endfor$
-$else$$if(lang.nl)$
+$else$$if(lang_nl)$
 	\section{Opleiding}
 	$for(education)$
 		$if(education.skip)$
@@ -226,7 +226,7 @@ $else$
 $endif$$endif$
 
 $if(skills)$
-$if(lang.en)$
+$if(lang_en)$
 	$if(interests)$
 		\section{Other Skills}
 	$else$
@@ -237,7 +237,7 @@ $if(lang.en)$
 		{$for(skills.description.en)$$skills.description.en$$sep$ \medskip{}\newline{}
 			$endfor$}
 	$endfor$
-$else$$if(lang.nl)$
+$else$$if(lang_nl)$
 	$if(interests)$
 		\section{Andere Vaardigheden}
 	$else$
@@ -255,14 +255,14 @@ $endif$$endif$
 $endif$
 
 $if(interests)$
-$if(lang.en)$
+$if(lang_en)$
 	\section{Other Interests and Activities}
 	$for(interests)$
 		\cvitem{$interests.title.en$}
 		{$for(interests.description.en)$$interests.description.en$$sep$ \medskip{}\newline{}
 		 	 $endfor$}
 	$endfor$
-$else$$if(lang.nl)$
+$else$$if(lang_nl)$
 	\section{Andere Interesses en Activiteiten}
 	$for(interests)$
 		\cvitem{$interests.title.nl$}
