@@ -47,13 +47,31 @@ experience:
     city: Den Haag
     description:
       en:
-        - Terraform, Hashicorp Vault, Ansible, GCP, Secure Design
-        - Design, develop and maintain GCP infrastructure using Secure Infrastructure
-          as Code practices.
+        - Terraform with GCP and GitHub providers, Cloud Build, Compute Engine,
+          IAM, IAP/Zero Trust, Networking, HashiCorp Vault, and various other
+          DevOps tools
+        - Designing, developing and continuously improving infrastructure for a
+          multi-technology Managed Detection and Response (MDR) platform with
+          highly automated on boarding of new customers.
+        - Designing, developing and continuously improving a centralized point
+          of control for all pipelines, development tooling, other
+          organizational resources and access control for multiple business
+          units in a standardized automated and secure manner managed from a
+          single git repository following Everything as Code practices and with
+          strong RBAC/POLP adhearance.
       nl:
-        - Terraform, Hashicorp Vault, Ansible, GCP, Secure Design
-        - Het veilig ontwerpen, ontwikkelen en onderhouden van GCP infrastructuur met
-          Infrastructure as Code tooling.
+        - Terraform met GCP en GitHub providers, Cloud Build, Compute Engine,
+          IAM, IAP/Zero Trust, Networking, HashiCorp Vault, en verschillende
+          andere DevOps-tools
+        - Het ontwerpen, ontwikkelen en continu verbeteren van infrastructuur
+          voor een multi-technologie Managed Detection and Response (MDR)
+          Platform met sterk geautomatiseerde onboarding van nieuwe klanten.
+        - Het ontwerpen, ontwikkelen en continu verbeteren van een
+          gecentraliseerd punt van controle voor alle pipelines, ontwikkeltools,
+          andere organisatorische resources en access control voor meerdere
+          business units op een gestandaardiseerde, geautomatiseerde en veilige
+          manier beheerd vanuit een enkele git-repository volgens Everything as
+          Code-praktijken en in overeenstemming met RBAC en POLP.
   - title:
       en: Software Developer C++
       nl: Software Developer C++
@@ -316,23 +334,23 @@ skills:
       en: B class
       nl: Klasse B
   - title:
-      en: Programming
-      nl: Programmeren
+      en: Development
+      nl: Ontwikkeling
     description:
         en:
           - >
-              General development: C/C++, Java, Python
+              General development: Python
           - >
               App development: Android/Java, Kotlin
           - >
-              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL, REST, SPA, PWA
+              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL
         nl:
           - >
-              Algemeen: C/C++, Java, Python
+              Algemeen: Python
           - >
               App development: Android/Java, Kotlin
           - >
-              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL, REST, SPA, PWA
+              Web development: Vue, Django, Firebase, HTML, CSS, JavaScript, SQL
   - title:
       en: Technical Proficiencies
       nl: Technische Vaardigheden
@@ -372,13 +390,9 @@ interests:
       en:
         - >
             Blue belt
-        - >
-            Frequent participant in competition
       nl:
         - >
             Blauwe Band
-        - >
-            Frequent deelnemer in competities
   - title:
       en: Home automation
       nl: Huis automatisering
