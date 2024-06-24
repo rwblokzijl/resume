@@ -6,7 +6,7 @@ CVEN="./Robert Wessel Blokzijl - Curriculum Vitae - English.pdf"
 .phony: all clean pdf
 
 run:
-	evince ${CVEN} > /dev/null 2>&1 &
+	evince ${CVEN} ${CVNL} > /dev/null 2>&1 &
 
 pdf:
 	pandoc -M "lang_nl" --template resume.pandoc.tex --pdf-engine=xelatex -o ${CVNL} resume.yml

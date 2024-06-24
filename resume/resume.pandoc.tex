@@ -107,9 +107,9 @@ $if(address)$
 	$if(address.include)$
 		$if(public)$
 			$if(lang_nl)$
-				\address{Geboren $birthdate.day$ $birthdate.month.nl$ $birthdate.year$ te $birthdate.city$ }{\makenewline Woonachtig in $address.city$}
+				\address{ Geboren $birthdate.day$ $birthdate.month.nl$ $birthdate.year$ }{\makenewline Woonachtig in $address.city$}
 			$else$
-				\address{Born $birthdate.city$, $birthdate.month.en$, $birthdate.day$ $birthdate.year$}{\makenewline Lives in $address.city$}
+				\address{ Born $birthdate.city$, $birthdate.month.en$, $birthdate.day$ }{\makenewline Lives in $address.city$}
 			$endif$
 		$else$
 			% $if(address.street)$
@@ -180,18 +180,24 @@ $endif$$endif$
 $if(lang_en)$
 	\section{Work Experience}
 	$for(experience)$
-		\cventry{$experience.dates.en$}{$experience.title.en$}{$experience.employer$}
-			{$experience.city$}{}
-			{$for(experience.description.en)$$experience.description.en$$sep$ \medskip{}\newline{}
-			$endfor$}
+		$if(experience.skip)$
+		$else$
+		  \cventry{$experience.dates.en$}{$experience.title.en$}{$experience.employer$}
+			  {$experience.city$}{}
+			  {$for(experience.description.en)$$experience.description.en$$sep$ \medskip{}\newline{}
+			  $endfor$}
+	  $endif$
 	$endfor$
 $else$$if(lang_nl)$
 	\section{Werkervaring}
 	$for(experience)$
-		\cventry{$experience.dates.nl$}{$experience.title.nl$}{$experience.employer$}
-			{$experience.city$}{}
-			{$for(experience.description.nl)$$experience.description.nl$$sep$ \medskip{}\newline{}
-			$endfor$}
+		$if(experience.skip)$
+		$else$
+		  \cventry{$experience.dates.nl$}{$experience.title.nl$}{$experience.employer$}
+			  {$experience.city$}{}
+			  {$for(experience.description.nl)$$experience.description.nl$$sep$ \medskip{}\newline{}
+			  $endfor$}
+	  $endif$
 	$endfor$
 $else$
 	\section{Experience}

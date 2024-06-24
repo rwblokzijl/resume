@@ -7,7 +7,7 @@ public: true
 # lang:
 #     en: false
 #     nl: true
-full: true
+full: false
 photo: image.png
 firstname: Robert Wessel
 lastname: Blokzijl
@@ -18,12 +18,12 @@ birthdate:
       en: June
       nl: Juni
     year: 1994
-    city: Vlaardingen
+    # city: Vlaardingen
 address:
     include: true
-    street: Röntgenweg 583
-    postcode: 2624WW
-    city: Delft
+    street: Fredrik Hendriklaan 20
+    postcode: 2351GC
+    city: Leiderdorp
     country: Netherlands
 email: wesselb94@gmail.com
 phone: +31 6 20800710
@@ -31,6 +31,11 @@ linkedin: robert-wessel-blokzijl
 github: rwblokzijl
 twitter:
 homepage:
+
+settings:
+    protect-email: false
+    protect-phone: true
+    protect-address: true
 
 summary:
     en:
@@ -73,8 +78,27 @@ experience:
           manier beheerd vanuit een enkele git-repository volgens Everything as
           Code-praktijken en in overeenstemming met RBAC en POLP.
   - title:
+      en: Web Developer
+      nl: Web Developer
+    dates:
+      en: Jun 2019 - Nov 2019/present
+      nl: Jun 2019 - Nov 2019/dd
+    employer: Freelance
+    description:
+      en:
+        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
+        - Working as a freelance software developer creating and maintaning
+          an on-the-road accounting app, and hosting and maintaning websites for
+          various clients until today.
+      nl:
+        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
+        - Het maken en onderhouden van een on-the-road boekhoudapp, en het
+          hosten en onderhouden van websites voor verschillende opdrachtgevers
+          tot heden.
+  - title:
       en: Software Developer C++
       nl: Software Developer C++
+    skip: true
     dates:
       en: Jul 2017 - Jan 2021
       nl: Jul 2017 - Jan 2021
@@ -90,8 +114,8 @@ experience:
         - Het bouwen en onderhouden van server installatie en maintainance tools
           voor accounting en management servers.
   - title:
-      en: Thesis Blockchain engineering
-      nl: Thesis Blockchain engineering
+      en: Master Thesis Blockchain engineering
+      nl: Master Thesis Blockchain engineering
     dates:
       en: Nov 2019 - Jul 2021
       nl: Nov 2019 - Jul 2021
@@ -109,23 +133,6 @@ experience:
         - Het onderzoeken van stablecoins en het bouwen van een Proof of Concept
           van een Digitale Euro, om de mogelijkheden van blockchain te
           verkennen binnen het Eurosysteem.
-  - title:
-      en: Web Developer
-      nl: Web Developer
-    dates:
-      en: Jun 2019 - present
-      nl: Jun 2019 - dd
-    employer: Freelance
-    description:
-      en:
-        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
-        - Working as a freelance software developer creating and maintaning
-          an on-the-road accounting app, and hosting and maintaning websites for
-          various clients.
-      nl:
-        - Python, Django, HTML, CSS, JavaScript, VueJS, Firebase
-        - Het maken en onderhouden van een on-the-road boekhoudapp, en het
-          hosten en onderhouden van websites voor verschillende opdrachtgevers.
   - title:
       en: Cloud Hosting - Bachelor Thesis
       nl: Cloud Hosting - Afstudeerstage
@@ -158,19 +165,17 @@ experience:
     city: Delft
     description:
       en:
-        - WireShark, Intrusion Detection Systems, Snort, Ransomware, Exploit
-          kits, Advandced Persistent
-          Threats
+        - WireShark, Intrusion Detection Systems, Ransomware, Exploit kits.
         - Time sensitive analysis of potentially malicious traffic in mission
           critical customer networks.
       nl:
-        - WireShark, Intrusion Detection Systems, Snort, kwaadaardige netwerk
-          patronen, klant contact.
+        - WireShark, Intrusion Detection Systems, Ransomware, Exploit kits.
         - Het monitoren van netwerk verkeer voor kwaadaardig gedrag en het
           escaleren naar de klant.
   - title:
       en: Cyberthreat monitoring Internship
       nl: Cyberthreat monitoring Stage
+    skip: false
     dates:
       en: Sep 2015 - Jan 2016
       nl: Sep 2015 - Jan 2016
@@ -256,7 +261,7 @@ education:
     description:
       en:
       nl:
-    skip: false
+    skip: true
   - title:
     dates:
       en: Aug 2011 – Jun 2012
@@ -282,7 +287,7 @@ education:
       en: Valdres VGS
       nl: Valdres VGS
     city: Leira, Norway
-    skip: false
+    skip: true
   - title:
       en: Data- and Electronics
       nl: Data- en Electonica
@@ -357,30 +362,30 @@ skills:
     description:
         en:
           - >
-              Cloud: GCP, Azure, Terraform
+              Cloud: Terraform, GCP, Google Workspace, Github
           - >
               Systems: GNU/Linux (Arch, Debian, Ubuntu) - daily personal and proffessional use since 2014
           - >
               Virtualisation: VMware ESXi, vSphere, NSX, vSAN, Virtual Box, KVM
           - >
-              Networking: Architecture design, TCP/IP, OSI, Routing, Switching, Troubleshooting, Cisco, Juniper
+              Networking: Architecture design, TCP/IP, OSI, Routing/Switching protocols, Troubleshooting, Cisco
           - >
-              Security: Snort, BRO network monitor, Firewalling, VPN, PGP,
+              Security: Snort, BRO network monitor, Firewalling, VPN
           - >
-              Other proficiencies: Git, svn, GNU/Linux CLI tooling
+              Other proficiencies: Git, svn, other GNU/Linux CLI tooling
         nl:
           - >
-              Cloud: GCP, Azure, Terraform
+              Cloud: Terraform, GCP, Google Workspace, Github
           - >
               Systemen: GNU/Linux (Arch, Debian, Ubuntu) - dagelijks persoonlijk and proffesioneel gebruik sinds 2014
           - >
               Virtualisatie: VMware ESXi, vSphere, NSX, vSAN, Virtual Box, KVM
           - >
-              Netwerken: Architectuur ontwerp, TCP/IP, OSI, Routing, Switching, Troubleshooting, Cisco, Juniper
+              Netwerken: Architectuur ontwerp, TCP/IP, OSI, Routing/Switching protocollen, Troubleshooting, Cisco
           - >
-              Security: Snort, BRO network monitor, Firewalling, VPN, PGP,
+              Security: Snort, BRO network monitor, Firewalling, VPN
           - >
-              Andere vaardigheden: Git, svn, GNU/Linux CLI tooling
+              Andere vaardigheden: Git, svn, andere GNU/Linux CLI tooling
 
 interests:
   - title:
@@ -395,7 +400,7 @@ interests:
             Blauwe Band
   - title:
       en: Home automation
-      nl: Huis automatisering
+      nl: Thuis automatisering
     description:
       en:
         - >
@@ -416,11 +421,6 @@ interests:
       nl:
         - >
             Gebruikmakend van: Linux, i3, Vim, Zsh, git, etc.
-
-settings:
-    protect-email: false
-    protect-phone: true
-    protect-address: false
 
 ...
 
